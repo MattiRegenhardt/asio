@@ -25,7 +25,7 @@ target_include_directories(
         asio
         INTERFACE
 
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/asio/asio/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/asio/include>
         $<INSTALL_INTERFACE:include>
 )
 add_library(asio::asio ALIAS asio)
